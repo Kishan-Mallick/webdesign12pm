@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <form action="/php">
+           <label for="fname">Enter your first name</label> 
+           <input type="text" id="fname" name="first-name" placeholder="First name" required minlength="3" maxlength="10">
+
+           <br>
+           <br>
+           <label for="lname">Enter your Last name</label> 
+           <input type="text" id="lname" name="last-name" placeholder="Last name" required minlength="5" maxlength="15">
+
+           <br>
+           <br>
+
+           <label for="mail">Enter your email Id</label>
+           <input type= "email" required placeholder="Email Address" id="mail" name="email-id">
+
+           <br><br>
+
+           <label for="pas">Enter your password</label>
+           <input type="password" name="password" id="pas" required minlength="8" maxlength="16" placeholder="password">
+
+           <br>
+           <br>
+
+           <label for="age">Enter your age</label>
+           <input type="number" name="age" id="age" min="15" max="70" placeholder="age">
+
+           <br>
+           <br>
+
+           <label for="dob">Enter your date of birth</label>
+           <input type="date" name="dob" id="dob" required>
+
+           <br>
+           <br>
+
+            <label for="gen">Male</label>
+            <input type="radio" name="gen" id="gen" >
+            <label for="gen">Female</label>
+            <input type="radio" name="gen" id="gen" checked>
+
+            <br>
+            <br>
+
+            <label for="10">10 <sup>th</sup></label>
+            <input type="checkbox" name="10" id="10">
+            <br><br>
+            <label for="12">12 <sup>th</sup></label>
+            <input type="checkbox" name="12" id="12">
+            <br>
+            <br>
+            <label for="graduation">graduation</label>
+            <input type="checkbox" name="graduation" id="graduation">
+
+            <br>
+            <br>
+            <label for="postgraduation">postgraduation</label>
+            <input type="checkbox" name="postgraduation" id="postgraduation">
+            <br>
+            <br>
+
+            <label for="color">Fav Color</label>
+            <input type="color" name="color" id="color">
+
+            <br><br>
+
+            <label for="resume">Upload resume</label>
+            <input type="file" name="resume" id="resume" multiple>
+
+            <br><br>
+
+           <input type="submit">
+        </form>
+    </center>
+</body>
+</html>
