@@ -78,7 +78,26 @@
 
             <br><br>
 
-           <input type="submit">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="jabalpur">Jabalpur</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="indore">Indore</option>
+            </select>
+            <br><br>
+            <label for="Rating">Rating</label>
+            <input type="range" name="rating" id="rating" min="1" max="10">
+
+            <input type="button" value="Click me">
+            
+            <br><br>
+
+            <label for="add">Address</label>
+            <textarea name="add" id="add" rows="20" cols="30" placeholder="Enter your address"></textarea>
+            <br><br>
+
+           <input type="submit"> 
+           <input type="reset" value="reset">
         </form>
     </center>
 </body>
