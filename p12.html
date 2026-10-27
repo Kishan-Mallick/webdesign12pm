@@ -27,6 +27,58 @@
             color: white;
             text-decoration: none;
         }
+
+        #mainImage{
+            position: relative;
+            width: 1270px;
+        }
+
+        #mainImage img{
+            width: 1270px;
+            height: 400px;
+        }
+        #name{
+            position: absolute;
+            left: 550px;
+            top: 70px;
+            font-size: 64px;
+            color: rgb(200, 202, 214);
+            width: 90px;
+            height: 200px;
+            line-height: 80px;
+        }
+
+        #timing{
+            background-color: black;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        #add{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: rgb(245, 248, 246);
+            font-size: 24px;
+            background-color: black;
+        }
+
+        #mainSection{
+            border: 1px solid green;
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        #heading{
+            background-color: black;
+            color: white;
+            width: 260px;
+            text-align: center;
+            margin: 0px auto;
+        }
     </style>
 </head>
 <body>
@@ -38,8 +90,31 @@
             <div class="box"><a href="">Where</a></div>
         </nav>
         <div id="mainImage">
-            <!-- <img src="./image/images.jpeg" alt="cafeImage"> -->
+            <h1 id="name">the Cafe</h1>
+            <img src="./image/cafe.jpeg" alt="cafeImage">
+            <div id="timing">Open from 6Am to 5Pm</div>
+
+            <div id="add">1212 Bhawarkua Indore</div>
         </div>
     </header>
+
+    <section id="mainSection">
+        <div id="about">
+            <h1 id="heading">ABOUT THE CAFE</h1>
+
+            <div id="para1">
+                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div id="para2">
+                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            </div>
+
+            <div id="para3">
+                <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

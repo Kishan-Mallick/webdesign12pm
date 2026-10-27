@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion In Css</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 1px solid red;
+            margin: 20px;
+            display: inline-block;
+            color: white;
+            font-size: 32px;
+        }
+
+        /* #box3{
+            position: relative;
+            left: 50px;
+            top: 100px;
+        } */
+
+
+        
+        #box2{
+            position: absolute;
+            z-index: 4;
+            /* top: 50px; */
+            /* left: 50px; */
+        }
+
+        #box3{
+            position: relative;
+            z-index: 5;
+        }
+
+        .con{
+            background-color: burlywood;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading1">Postion In Css</h1>
+
+    <div class="con">
+        <div id="box1" class="box">box 1</div>
+        <div id="box2" class="box">box 2</div>
+        <div id="box3" class="box">box 3</div>
+        <div id="box4" class="box">box 4</div>
+        <div id="box5" class="box">box 5</div>
+
+    </div>
+</body>
+</html>
