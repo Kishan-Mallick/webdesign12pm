@@ -9,18 +9,22 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            font-family: "Inconsolata",sans-serif;
         }
         #navbar{
             background-color: black;
             padding-top: 10px;
             padding-bottom: 10px;
+            position: fixed;
+           
+            z-index: 10;
         }
         .box{
             display: inline-block;
             color: white;
-            width: 210px;
+            width: 314px;
             height: 30px;
-            padding-left: 77px;
+            padding-left: 98px;
             padding-top: 5px;
         }
         a{
@@ -67,26 +71,107 @@
         }
 
         #mainSection{
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 800px;
-            margin: 50px auto;
+            margin: 80px auto;
         }
 
-        #heading{
+        #heading, #menuHeading{
             background-color: black;
             color: white;
             width: 260px;
             text-align: center;
             margin: 0px auto;
+            margin-bottom: 50px;
         }
+
+        #para1, #para2, #para3{
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+        #para3{
+            border-left: 7px solid rgb(105, 104, 105);
+            padding: 12px;
+            background-color: rgb(245, 241, 241);
+        }
+
+        #para3 p{
+            margin-top: 20px;
+        }
+
+        #cafeImg img{
+            width: 800px;
+        }
+
+        #aboutFooter p{
+            font-size: 16px;
+            margin-top: 15px;
+            letter-spacing: 1.5px;
+
+        }
+
+        #aboutFooter p span{
+            font-weight: 700;
+        }
+
+        #menu{
+            margin-top: 70px;
+            /* border: 1px solid green; */
+        }
+
+        #menuHeading{
+            width: 150px;
+        }
+
+        #menuContainer{
+
+        }
+        #menuCategory{
+            padding: 8px;
+            background-color: rgb(240, 237, 237);
+             box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            
+            /* border: 1px solid rgb(80, 2, 15); */
+        }
+        #eat, #drink{
+            width: 380px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            text-align: center;
+            font: 15px;
+            letter-spacing: 1.2px;
+            padding: 5px 0px;
+        }
+        #eat:hover{
+            background-color: aqua;
+        }
+
+        #inputForm{
+            padding: 5px;
+            
+        }
+        #inputForm input{
+            width: 790px;
+            margin: 10px auto;
+            height: 50px;
+            font-size: 24px;
+            letter-spacing: 1.2px;
+            padding-left: 8px;
+            border-radius: 5px;
+            border: 0.5px solid gray;
+        }
+
+        
     </style>
 </head>
 <body>
     <header id="header">
         <nav id="navbar">
-            <div class="box"><a href="">Home</a></div>
-            <div class="box"><a href="">About</a></div>
-            <div class="box"><a href="">Menu</a></div>
+            <div class="box"><a href="#header">Home</a></div>
+            <div class="box"><a href="#about">About</a></div>
+            <div class="box"><a href="#menu">Menu</a></div>
             <div class="box"><a href="">Where</a></div>
         </nav>
         <div id="mainImage">
@@ -114,6 +199,44 @@
                 <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
                 <p>Chef, Coffeeist and Owner: Liam Brown</p>
             </div>
+
+            <div id="cafeImg">
+                <img src="./image/coffeeshop.jpg" alt="cafe shop">
+            </div>
+
+            <div id="aboutFooter">
+                <p><span>Opening hours:</span> everyday from 6am to 5pm.</p>
+                <p><span>Address:</span> 15 Adr street, 5015, NY</p>
+            </div>
+        </div>
+
+        <div id="menu">
+            <h1 id="menuHeading">The Menu</h1>
+            <div id="menuContainer">
+                <div id="menuCategory">
+                    <div id="eat">Eat</div>
+                    <div id="drink">Drink</div>
+                </div>
+                <div id="menuItem">
+                    <div id="item1"></div>
+                    <div id="item2"></div>
+                    <div id="item3"></div>
+                    <div id="item4"></div>
+                    <div id="item5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="inputForm">
+            <input type="text" name="userName" id="userName" placeholder="Name">
+            <br>
+            <input type="number" name="people" id="people" min="1" placeholder="No. of people">
+            <br>
+            <input type="datetime-local" name="time" id="time">
+            <br>
+            <input type="text" name="message" id="message" placeholder="Message / Special Requirment">
+            <br>
+
         </div>
     </section>
 </body>
