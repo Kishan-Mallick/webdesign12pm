@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 1px solid red;
+            background-color: cadetblue;
+            display: flex;
+            column-gap:10px;
+            row-gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .child{
+            border: 1px solid rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="child1">child 1</div>
+        <div class="child" id="child2">child 2</div>
+        <div class="child" id="child3">child 3</div>
+        <div class="child" id="child4">child 4</div>
+        <div class="child" id="child5">child 5</div>
+    </div>
+</body>
+</html>
