@@ -1,0 +1,15 @@
+parent container
+    display - flex
+    flex direction -> row | column | row reverse | column reverse
+
+    justify content -> center | sapce-arround | space between | space evenly | flex start | flex end -> main axis
+
+    align item -> streach | center | flex start | flex end
+
+    flex wrap - wrap
+
+    row-gap -
+    col gap - 
+
+    
+child container
