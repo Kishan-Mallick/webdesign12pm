@@ -8,18 +8,104 @@
         .nav{
             background-color: black;
             color: white;
-            height: 100px;
+            height: 70px;
+        
+
         }
 
         ul{
             display: flex;
             justify-content: space-evenly;
-            height: 100px;
+            height: 70px;
             align-items: center;
         }
 
         li{
             list-style: none;
+        }
+
+        #mainSec{
+            margin: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 25px;
+        }
+
+        #cardCon{
+            height: 300px;
+            width: 270px;
+            background-color: rgb(232, 228, 228);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #imgCon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 220px;
+            position: relative;
+            
+        }
+
+        #imgCon img{
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        #off{
+            position: absolute;
+            background-color: rgb(95, 102, 194);
+            left: 15px;
+            bottom: 15px;
+            width: 60px;
+            border-radius: 2px;
+            color: white;
+        }
+
+        #cardFooter{
+            
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #name{
+            font-size: 15px;
+        }
+
+        #serve{
+            font-size: 12px;
+            color: rgb(78, 76, 76);
+        }
+        #price{
+            color: rgb(78, 76, 76);
+        }
+
+        #timing{
+            font-size: 12px;
+        }
+        #priceSec{
+            
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        #rating{
+            background-color: rgb(28, 46, 2);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 2px;
+
         }
     </style>
 </head>
@@ -32,5 +118,208 @@
             <li>Visit Us</li>
         </ul>
     </div>
+
+    <section id="mainSec">
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+
+        <div id="cardCon">
+             <div id="imgCon">
+                <img src="./image/kfc.webp" alt="kfc">
+                <div id="off">30% Off</div>
+             </div>
+             <div id="cardFooter">
+                <div id="restro">
+                    <h3 id="name">KFC</h3>
+                    <h4 id="serve">Burger, Fast food, Rolls</h4>
+                </div>
+                <div id="priceSec">
+                    <div id="rating">4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                    </svg></div>
+                    <div id="price">200 for one</div>
+                    <div id="timing">25 - 30 Min</div>
+                </div>
+             </div>
+        </div>
+    </section>
 </body>
 </html>
