@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            position: relative;
+        }
+
+        #box1{
+            animation-name: myAnimation;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        #box2{
+            animation-name: myAnimation1;
+            animation-duration: 10s;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+        }
+
+        #box3{
+            animation-name: myAnimation1;
+            animation-duration: 10s;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+         #box4{
+            animation-name: myAnimation1;
+            animation-duration: 10s;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+
+         #box5{
+            animation-name: myAnimation1;
+            animation-duration: 10s;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        #box6{
+            animation-name: myAnimation1;
+            animation-duration: 10s;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+
+        @keyframes myAnimation{
+            from{
+                background-color: aquamarine;
+            }
+
+            to{
+                background-color: blueviolet;
+            }
+        }
+
+        @keyframes myAnimation1{
+            0%{
+               left: 0px;
+               background-color: red;
+            }
+            50%{
+                left: 1000px;
+                background-color: yellow;
+            }
+            75%{
+                left: 1000px;
+                background-color: yellow;
+            }
+            100%{
+                left: 0px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+
+    <div class="box" id="box1">Box1</div>
+
+    <div class="box" id="box2">Linear</div>
+    <div class="box" id="box3">Ease In</div>
+    <div class="box" id="box4">Ease out</div>
+    <div class="box" id="box5">Ease In Out</div>
+    <div class="box" id="box6">Custom</div>
+</body>
+</html>

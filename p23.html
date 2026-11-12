@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./image/earth-space-border-two-column.jpg);
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            animation-name: myAnimation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes myAnimation{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            20%{
+                top: 0px;
+                left: 1050px;
+            }
+            40%{
+                left: 525px;
+                top: 200px;
+            }
+            60%{
+                top: 400px;
+                left: 1050px;
+            }
+            80%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./image/ufo.svg" alt="">
+</body>
+</html>
