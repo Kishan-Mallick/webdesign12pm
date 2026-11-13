@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: blueviolet;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        #box1{
+            transition-property: all;
+            transition-duration: 5s;
+             transition-delay: 1s;
+             transition-timing-function: ease-in-out;
+
+        }
+
+        #box1:hover{
+            background-color: burlywood;
+            width: 200px;
+            height: 200px;
+        }
+
+
+         #box2{
+            transition-property: all;
+            transition-duration: 5s;
+             transition-delay: 1s;
+             transition-timing-function: ease-in-out;
+
+        }
+
+        #box2:hover{
+            width: 500px;
+            height: 30px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition in CSS</h1>
+
+    <div class="box" id="box1">Box1</div>
+
+    <div class="box" id="box2">Box2</div>
+</body>
+</html>

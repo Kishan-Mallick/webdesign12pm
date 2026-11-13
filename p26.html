@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #para1::first-line{
+            color: brown;
+        }
+
+        #para2::first-letter{
+            color: chocolate;
+            font-size: 54px;
+        }
+
+        #para2::selection{
+            background-color: crimson;
+        }
+
+        #para1::selection{
+            background-color: aqua;
+        }
+
+        h1::before{
+            content: url(./image/cafe.jpeg);
+            
+        }
+
+        h1::after{
+            content: url(./image/coffeeshop.jpg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nobis sapiente aliquid nam, ullam, deleniti at non quasi error accusantium harum quo cum velit quos voluptate nesciunt soluta? Labore, asperiores.
+        Earum nobis sit laudantium omnis saepe doloribus quos placeat quia nemo ratione alias modi dolores minus amet quibusdam corrupti, cumque ad quasi exercitationem cum? Illum est fuga nostrum. Vitae, dolorem.</p>
+
+        <h1>Next Para</h1>
+
+        <p id="para2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis vitae nihil, nostrum non debitis tenetur dolor suscipit unde, quas rem beatae sunt earum sint aliquid, quisquam aut quia iusto? Illum.
+            Veritatis saepe quis est ipsa qui possimus rem dolores quas obcaecati minus voluptate, amet laudantium totam, nesciunt excepturi pariatur. Quae aut sequi sed fugit magnam ex, mollitia voluptas delectus facere?
+        </p>
+    </div>
+</body>
+</html>
