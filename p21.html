@@ -28,8 +28,8 @@
             margin: 25px;
             display: flex;
             flex-wrap: wrap;
-            row-gap: 10px;
-            column-gap: 25px;
+            row-gap: 60px;
+            column-gap: 40px;
         }
 
         #cardCon{
@@ -43,7 +43,7 @@
             justify-content: center;
             align-items: center;
             transition-property: all;
-            transition-duration: 2s;
+            transition-duration: 0.5s;
             transition-timing-function: ease-in;
         }
 
@@ -113,6 +113,7 @@
 
         #cardCon:hover{
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            transform: perspective(500px) scale(1.1);
         }
 
         #notes{

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+
+
+        .box{
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
+            border: 1px solid red;
+            background-color: burlywood;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+
+        #scaleX{
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+
+        #scaleY:hover{
+            transform: scaleY(2)
+        }
+
+         #scaleY{
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+
+        #scaleX:hover{
+            transform: scaleX(2)
+        }
+
+        #translateX:hover{
+            transform: translateX(-200px);
+        }
+
+        #translateY:hover{
+            transform: translateY(200px);
+        }
+
+        #rotateX:hover{
+            transform: rotateX(45deg);
+        }
+        
+        #rotateY:hover{
+            transform: rotateY(90deg);
+        }
+
+        #rotateZ:hover{
+            transform: rotate(36deg);
+        }
+
+        #skewX:hover{
+            transform: skewX(20deg);
+        }
+
+        #skewY:hover{
+            transform: skewY(20deg);
+        }
+
+         #skewZ:hover{
+            transform: skew(20deg);
+        }
+
+        #translateZ:hover{
+            transform: perspective(500px) translateZ(-200px);
+        }
+
+        #scaleZ:hover{
+            transform: perspective(500px) rotateY(45deg) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <h1>2D & 3D Transformation</h1>
+    <div class="container">
+        <div class="box" id="scaleX">Scale X</div>
+        <div class="box" id="scaleY">Scale Y</div>
+        <div class="box" id="scaleZ">Scale Z</div>
+
+        <div class="box" id="translateX">Translate X</div>
+        <div class="box" id="translateY">Translate Y</div>
+        <div class="box" id="translateZ">Translate Z</div>
+
+        <div class="box" id="rotateX">Rotate X</div>
+        <div class="box" id="rotateY">Rotate Y</div>
+        <div class="box" id="rotateZ">Rotate Z</div>
+
+        <div class="box" id="skewX">Skew X</div>
+        <div class="box" id="skewY">Skew Y</div>
+        <div class="box" id="skewZ">Skew Z</div>
+    </div>
+</body>
+</html>
