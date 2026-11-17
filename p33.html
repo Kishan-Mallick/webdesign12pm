@@ -8,6 +8,7 @@
         *{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         .navbar{
             width: 100vw;
@@ -15,12 +16,14 @@
             background-color: black;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
 
         .logo{
             
             height: 80%;
             width: 10%;
+            border-radius: 20%;
             
         }
         
@@ -28,6 +31,70 @@
         .logo img{
             width: 100%;
             height: 100%;
+            border-radius: 100%;
+        }
+
+        .home,.about,.contact{
+            color: white;
+        }
+
+        .contact:hover{
+            color: rgb(252, 168, 168);
+        }
+
+        .home:hover{
+            color: rgb(252, 168, 168);
+        }
+
+        .about:hover{
+            color: rgb(252, 168, 168);
+        }
+        .option{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.8rem;
+            width: 40%;
+            height: 30%;
+            
+        }
+
+        .search{
+            width: 35%;
+            height: 35%;
+            border-radius: 4px;
+        }
+
+        #srch{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            padding: 0.6rem;
+            font-size: 1.2rem;
+        }
+
+        @media(max-width:650px){
+            .navbar{
+                background-color: green;
+                flex-direction: column;
+            }
+            .search{
+                order: 2;
+                width: 60%;
+            }
+            #srch{
+                width: 100%;
+            }
+
+            .option{
+                order: 1;
+                
+                width: 95%;
+            }
+
+            .logo{
+                display: none;
+            }
         }
 
     </style>
@@ -36,6 +103,14 @@
     <div class="navbar">
         <div class="logo">
             <img src="./image/images (1).jpeg" alt="">
+        </div>
+        <div class="search">
+            <input type="text" name="search" id="srch" placeholder="Search Here......">
+        </div>
+        <div class="option">
+            <div class="home">Home</div>
+            <div class="about">About</div>
+            <div class="contact">Contact</div>
         </div>
     </div>
 </body>
