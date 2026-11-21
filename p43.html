@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        
+        WAP to check the given number is a armstrong number or not
+
+    </h1>
+
+    <script>
+        function countDigit(n)
+        {
+            var count = 0;
+            while(n > 0)
+            {
+                n = Math.floor(n/10);
+                count++;   
+            }
+
+            return count;
+        }
+
+        function checkArmStrong(n)
+        {
+            var count = countDigit(n);
+            var ans = 0;
+            var temp = n;
+            while(n > 0)
+            {
+                var rem = n % 10;
+                ans = ans + rem**count
+                n = Math.floor(n/10);
+            }
+
+            if(ans === temp)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        var n = Number(prompt('Enter a number'));
+        var ans = checkArmStrong(n);
+
+        ans === true ? document.write('Armstrong') : document.write('Not a Armstrong')
+
+    </script>
+</body>
+</html>

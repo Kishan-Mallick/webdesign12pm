@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>WAP to check the number is prime or not....</h1>
+
+
+    <script>
+        function checkPrime(n)
+        {
+            var count = 0;
+            for(var i =1;i<=n;i++)
+            {
+                if(n%i === 0)
+                {
+                    count++; 
+                }   
+            }
+
+            if(count === 2)
+            {
+                document.writeln('Prime Number');
+            }
+            else
+            {
+                document.writeln('Not a Prime Number');
+            }
+        }
+
+        var n = Number(prompt('Enter a number'));
+
+        checkPrime(n); 
+
+    </script>
+
+</body>
+</html>

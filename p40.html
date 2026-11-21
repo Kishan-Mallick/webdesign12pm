@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>WAP to check number is even or odd</h1>
+
+    <script>
+        function checkEven(n)
+        {
+            if(n % 2 === 0)
+            {
+               console.log('Even number');
+               document.write('Even Number'); 
+            }
+            else
+            {
+                console.log('Odd number');
+                document.write('Odd Number');
+            }
+        }
+
+        var n = Number(prompt('Enter a number'));
+
+        checkEven(n);
+    </script>
+</body>
+</html>
