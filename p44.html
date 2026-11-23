@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Function in JS</h1>
+
+    <script>
+        function myFun1()
+        {
+            console.log('Good morning');
+
+            return 10;
+        }
+
+        var x = myFun1;
+        x();
+
+        // function Assignment
+
+
+        var myFun2 = function ()
+                    {
+                        console.log('Good Evening');
+                    }
+
+        myFun2();
+
+        //Arrow Function
+
+        var myFun3 = () => console.log('Good night');
+         myFun3();
+
+        //named function
+        
+        function square1(x)
+        {
+            console.log(x*x);
+        }
+
+        square1(5);
+                    
+
+        //Function Assignment
+        
+       var square2 = function (x)
+                    {
+                        console.log(x*x);
+                    }
+
+        square2(8);
+
+        //arrow function
+
+         var square3 = x => console.log(x*x);
+                    
+
+        square3(9);
+       
+    </script>
+</body>
+</html>
