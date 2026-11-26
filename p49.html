@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        button{
+            width: 300px;
+            height: 50px; 
+            font-size: 1.2rem;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+
+    <button onclick="clickHandler1()">click me to say good morning</button>
+
+    <button id="btn2">click me to say good afternoon</button>
+
+    <button id="btn3">click me to say good night</button>
+    
+
+    <script>
+        function clickHandler1()
+        {
+            alert('Good Morning!!!!');
+        }
+
+
+        
+
+
+        var btn2 = document.getElementById('btn2');
+
+        btn2.onclick = () => alert('Good Afternoon!!!!!');
+        
+
+
+        function clickHandler3()
+        {
+            alert('Good Night!!!!');
+        }
+
+
+        var btn3 = document.getElementById('btn3');
+
+        btn3.addEventListener('click',() => alert('good night!!!!!'));
+
+        
+
+        
+    </script>
+</body>
+</html>

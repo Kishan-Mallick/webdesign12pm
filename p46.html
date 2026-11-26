@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading1">basic DOM Manipulation</h1>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+    <input type="text" id="text1">
+
+    <script>
+        var heading1 = document.getElementById('heading1');
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+        var text1 = document.getElementById('text1');
+
+        //text inside
+
+        heading1.innerText = 'Learning Dom Manipulartion';
+
+        //HTML
+        box1.innerHTML = '<h1> I am a Box 1</h1>'
+
+        //outer
+        box2.outerHTML = '<div><h1> I am a Box 2</h1></div>'
+
+        box1.style.border = '1px solid black';
+
+        box1.className = 'box';
+
+        text1.placeholder = 'Search Here';
+        text1.name = 'search';
+        text1.maxLength = 20;
+    </script>
+</body>
+</html>

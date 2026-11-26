@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin: 10px auto;
+            border: 1px solid green;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Event</h1>
+    <div id="btn1">Click Me 1</div>
+    <div id="btn2">Click Me 2</div>
+    <div id="btn3">Click Me 3</div>
+
+    <div id="btn4">Click Me 4</div>
+
+    <div id="btn5">Click Me 5</div>
+
+    
+
+    <script>
+        var btn1 = document.getElementById('btn1');
+
+        btn1.onclick = function ()
+        {
+            alert('Clicked');
+        }
+
+        var btn2 = document.getElementById('btn2');
+
+        btn2.addEventListener('dblclick',()=> alert('double Clicked!!!!'));
+
+        var btn3 = document.getElementById('btn3');
+
+        btn3.addEventListener('contextmenu',()=> alert('right Clicked!!!!'));
+
+        var btn4 = document.getElementById('btn4');
+
+        btn4.addEventListener('mouseover',()=> alert('mouse in!!!!'));
+
+        var btn5 = document.getElementById('btn5');
+
+        btn5.addEventListener('mouseout',()=> alert('mouse out!!!!'));
+    </script>
+</body>
+</html>
