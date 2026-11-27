@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>keyboard Event</h1>
+
+    <p id="para"></p>
+    <input type="text" name="text1" id="text1">
+
+    <script>
+        var text1 = document.getElementById('text1');
+
+        var para = document.getElementById('para');
+
+        text1.addEventListener('keyup',function(evt){
+            console.log('kew down');
+            console.log(evt.target.value);
+
+            para.innerHTML = evt.target.value;
+        })
+
+        text1.addEventListener('focus',function(){
+            text1.style.backgroundColor = 'red';
+        })
+
+        text1.addEventListener('blur',function(){
+            text1.style.backgroundColor = 'green';
+        })
+    </script>
+</body>
+</html>

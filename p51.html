@@ -6,12 +6,43 @@
     <title>Document</title>
 
     <style>
-        .box
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(40, 127, 98);
+        }
     </style>
 </head>
 <body>
-    <div class="box">
+    <div class="box" id="container">
         <button id="btn">Color Change</button>
     </div>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var con = document.getElementById('container');
+
+
+        function clickHandler()
+        {
+            console.log('clicked');
+            var r = Math.floor(Math.random()*256);
+            var g = Math.floor(Math.random()*256);
+            var b = Math.floor(Math.random()*256);
+
+            con.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+           
+        }
+
+        btn.addEventListener('click',clickHandler);
+    </script>
 </body>
 </html>

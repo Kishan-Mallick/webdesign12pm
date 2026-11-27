@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .con{
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event object</h1>
+
+    <div class="con" id="con1">Click Me</div>
+
+
+    <script>
+        var con = document.getElementById('con1');
+
+        con.addEventListener('mousemove',function(evt){
+            console.log('clicked');
+            console.log(evt.x);
+            console.log(evt.y);
+            console.log(evt.target);
+        })
+
+    </script>
+</body>
+</html>

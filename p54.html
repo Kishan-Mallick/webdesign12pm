@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .mainSection{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 80%;
+            height: 80%;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .inputArea{
+            width: 40%;
+            height: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #task{
+            width: 50%;
+            height: 50%;
+            border-radius: 0.4rem;
+            padding: 1rem;
+            font-size: 1.4rem;
+
+        }
+
+        #add{
+            width: 30%;
+            height: 65%;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            font-weight: 800;
+            background-color: rgb(16, 16, 115);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainSection">
+        <div class="container" id="box">
+            <h1>Task Kepper</h1>
+            <div class="inputArea">
+                <input type="text" name="task" id="task">
+            <button id="add">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var addBtn = document.getElementById('add');
+
+        var task = document.getElementById('task');
+
+        var box = document.getElementById('box');
+
+        function clickHandler()
+        {
+            var text = task.value;
+
+            if(text === "")
+            {
+                return;   
+            }
+
+            var heading = document.createElement('h1');
+           heading.innerHTML = text;
+
+           box.append(heading);
+
+           task.value = ""
+;        }
+
+        addBtn.addEventListener('click',clickHandler);
+    </script>
+</body>
+</html>
